@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div class="container">
-      <product-list-one></product-list-one>
-      <product-list-two></product-list-two>
+      <product-list-one v-bind:products="products"></product-list-one>
+      <product-list-two v-bind:products="products"></product-list-two>
     </div>  
   </div>
 </template>
@@ -15,18 +15,24 @@ export default {
   components: {
     'product-list-one':productListOne,
     'product-list-two':productListTwo
+  },
+  data( ){
+     return{
+         products: [
+           {name:'Banan Skin', price: 20},
+           {name:'Plantain chips', price: 40},
+           {name:'Pawpaw Juice', price: 50},
+           {name:'Fanta lemon', price: 30},
+           {name:'Jollo rice', price: 40},
+         ]
+     }
   }
 }
 </script>
 
 <style>
-
  body{
-   font-family: Arial, sans-serif;
-   line-height: 1.6;
-   background:#e8f7f0;
-
- } 
- 
-
+   font-family:ubuntu;
+   color:#555;
+ }
 </style>
