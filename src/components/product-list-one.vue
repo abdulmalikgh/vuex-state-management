@@ -4,7 +4,7 @@
     <ul>
       <li v-for="product in products" :key="product">
         <span class="name"> {{product.name}} </span>
-        <span class="price"> {{product.price}} </span>
+        <span class="price"> GHC: {{product.price}} </span>
       </li>
     </ul>
   </div>

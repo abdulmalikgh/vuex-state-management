@@ -18,13 +18,7 @@ export default {
   },
   data( ){
      return{
-         products: [
-           {name:'Banan Skin', price: 20},
-           {name:'Plantain chips', price: 40},
-           {name:'Pawpaw Juice', price: 50},
-           {name:'Fanta lemon', price: 30},
-           {name:'Jollo rice', price: 40},
-         ]
+        
      }
   }
 }
