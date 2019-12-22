@@ -12,19 +12,18 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+import { mapActions } from 'vuex';
+
 export default {
   computed: {
     products() {
       return this.$store.state.products;
     },
-    saleProducts(){
-      return this.$store.getters.saleProducts;
-    }
+    ...mapGetters(['saleProducts'])
   },
   methods: {
-    reducePrice(amount) {
-      this.$store.dispatch('reducePrice',amount);
-    }
+   ...mapActions(['reducePrice'])
   },
 
 }
