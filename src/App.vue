@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div class="container">
-      <product-list-one v-bind:products="products"></product-list-one>
-      <product-list-two v-bind:products="products"></product-list-two>
+      <product-list-one ></product-list-one>
+      <product-list-two ></product-list-two>
     </div>  
   </div>
 </template>
