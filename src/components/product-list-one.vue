@@ -7,7 +7,7 @@
         <span class="price"> GHC: {{product.price}} </span>
       </li>
     </ul>
-    <button @click="reducePrice"> reduce Price </button>
+    <button @click="reducePrice(8)"> reduce Price </button>
   </div>
 </template>
 
@@ -22,10 +22,11 @@ export default {
     }
   },
   methods: {
-    reducePrice() {
-      this.$store.commit('reducePrice');
+    reducePrice(amount) {
+      this.$store.dispatch('reducePrice',amount);
     }
-  }
+  },
+
 }
 </script>
 
